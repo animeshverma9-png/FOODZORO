@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configure Your Event - FOODZORO</title>
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/event-details.css" />
+
+  <!-- Hollow Ninja Shapes Wallpaper -->
+  <style>
+    html, body {
+      background-color: #FFF9F3 !important;
+      background-image: url("data:image/svg+xml,%3Csvg width='260' height='260' viewBox='0 0 260 260' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23EA580C' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round' opacity='0.2'%3E%3Cpath d='M40,20 Q48,38 65,40 Q48,43 40,60 Q32,43 15,40 Q32,38 40,20 Z'/%3E%3Ccircle cx='40' cy='40' r='4'/%3E%3Cpath d='M190,20 L234,64 M230,60 L238,68'/%3E%3Cpath d='M234,20 L190,64 M194,60 L186,68'/%3E%3Ccircle cx='212' cy='42' r='2.5' fill='%23EA580C'/%3E%3Cpolygon points='45,110 52,135 48,150 42,150 38,135'/%3E%3Cline x1='45' y1='150' x2='45' y2='168'/%3E%3Ccircle cx='45' cy='173' r='4.5'/%3E%3Cpath d='M195,115 L200,127 L213,122 L207,135 L220,140 L207,145 L213,158 L200,153 L195,165 L190,153 L177,158 L183,145 L170,140 L183,135 L177,122 L190,127 Z'/%3E%3Ccircle cx='195' cy='140' r='3.5'/%3E%3Cpath d='M60,205 Q75,200 80,215 Q85,230 70,235 Q55,240 50,225 Q45,210 60,205 Z' stroke-dasharray='3 3'/%3E%3Ccircle cx='65' cy='220' r='3' fill='%23EA580C'/%3E%3Cpath d='M160,240 C185,225 210,195 230,170'/%3E%3Cline x1='160' y1='240' x2='152' y2='248'/%3E%3Ccircle cx='150' cy='250' r='2' fill='%23EA580C'/%3E%3Cpath d='M125,70 L127,76 L133,78 L127,80 L125,86 L123,80 L117,78 L123,76 Z'/%3E%3Cpath d='M125,180 L127,184 L131,185 L127,186 L125,190 L123,186 L119,185 L123,184 Z'/%3E%3C/g%3E%3C/svg%3E") !important;
+      background-repeat: repeat !important;
+      background-size: 260px 260px !important;
+      background-attachment: fixed !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Dark Announcement Strip with Bulk Food Badge -->
+  <div class="announcement-strip-black">
+    <div class="ticker-wrapper">
+      <div class="ticker-track">
+        <div class="ticker-element"><i class="fa-solid fa-bolt" style="color: #EF4444;"></i> Instant Bulk Customization</div>
+        <div class="ticker-separator">|</div>
+        <div class="ticker-element"><i class="fa-solid fa-truck-fast" style="color: #EF4444;"></i> On-Time Warm Delivery</div>
+        <div class="ticker-separator">|</div>
+        <div class="ticker-element"><i class="fa-solid fa-leaf" style="color: #22C55E;"></i> 100% Pure Veg Kitchen</div>
+        <div class="ticker-separator">|</div>
+        <div class="ticker-element"><i class="fa-solid fa-box-open" style="color: #EF4444;"></i> Spill-Proof Airtight Packaging</div>
+        
+        <div class="ticker-element"><i class="fa-solid fa-bolt" style="color: #EF4444;"></i> Instant Bulk Customization</div>
+        <div class="ticker-separator">|</div>
+        <div class="ticker-element"><i class="fa-solid fa-truck-fast" style="color: #EF4444;"></i> On-Time Warm Delivery</div>
+        <div class="ticker-separator">|</div>
+        <div class="ticker-element"><i class="fa-solid fa-leaf" style="color: #22C55E;"></i> 100% Pure Veg Kitchen</div>
+        <div class="ticker-separator">|</div>
+        <div class="ticker-element"><i class="fa-solid fa-box-open" style="color: #EF4444;"></i> Spill-Proof Airtight Packaging</div>
+      </div>
+    </div>
+    <div class="bulk-food-badge">
+      <i class="fa-solid fa-crown"></i> BULK FOOD MADE EASY
+    </div>
+  </div>
+
+  <!-- Sticky Navbar Component with Clean In-line Mascot Logo -->
+  <header class="navbar">
+    <div class="nav-container">
+      
+      <!-- FoodZoro Brand: In-line Circular Logo + Brush Typography -->
+      <div class="nav-left">
+        <a href="index.html" class="brand-logo zoro-crest-brand" aria-label="FoodZoro Home">
+          <div class="logo-crest-wrapper">
+            <picture>
+              <source srcset="images/logo.jpeg" type="image/jpeg">
+              <source srcset="images/logo.jpg" type="image/jpeg">
+              <source srcset="images/logo.png" type="image/png">
+              <img src="images/logo.jpeg" onerror="this.onerror=null; this.src='images/logo.jpg';" alt="FoodZoro Mascot Logo" class="brand-crest-img" />
+            </picture>
+          </div>
+          <div class="brand-title-wrap">
+            <span class="brand-brush-title">
+              <span class="text-brush-black">FOOD</span><span class="text-brush-red">Z</span><span class="text-brush-black">ORO</span>
+            </span>
+            <span class="brand-tagline">LOVE IT &bull; ZORO IT</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Center Navigation Pill (2 Buttons Only) -->
+      <nav class="nav-center-pill">
+        <a href="index.html" class="nav-pill-btn">
+          <i class="fa-solid fa-house"></i> Home
+        </a>
+        <a href="packages.html" class="nav-pill-btn active">
+          <i class="fa-solid fa-bowl-food"></i> Meal Boxes
+        </a>
+      </nav>
+
+      <!-- Right Actions: WhatsApp Instant Quote & Cart Badge -->
+      <div class="nav-right-actions">
+        <a 
+          href="https://wa.me/919810788986?text=Hi%20FoodZoro!%20I%20want%20to%20inquire%20about%20catering%20and%20meal%20boxes." 
+          target="_blank" 
+          class="btn-zoro-chat"
+          title="Chat directly with our Zoros"
+        >
+          <div class="chat-icon-orb">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+
+          <div class="chat-text-meta">
+            <span class="chat-badge-tag">⚡ INSTANT QUOTE</span>
+            <span class="chat-headline">Chat with Zoros</span>
+          </div>
+
+          <div class="chat-arrow-badge">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+
+        <a href="packages.html" class="cart-icon-btn" aria-label="Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-badge" id="cartBadge">3</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Background Canvas with Ambient Warm Gradients -->
+  <div class="event-bg-wrapper">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <main class="event-details-container">
+
+      <!-- Breadcrumbs Progress Bar -->
+      <nav class="flow-steps">
+        <div class="step-node completed">
+          <div class="icon-circle"><i class="fa-solid fa-check"></i></div>
+          <span class="step-label">Select Package</span>
+        </div>
+        <div class="step-connector active">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="step-node active">
+          <div class="icon-circle"><i class="fa-solid fa-calendar-check"></i></div>
+          <span class="step-label">Event Details</span>
+        </div>
+        <div class="step-connector">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="step-node">
+          <div class="icon-circle"><i class="fa-brands fa-whatsapp"></i></div>
+          <span class="step-label">Get Zoro Quote</span>
+        </div>
+      </nav>
+
+      <!-- 2-Column Split Dashboard -->
+      <div class="configurator-split-layout">
+
+        <!-- LEFT COLUMN: Form Wrapper -->
+        <section class="event-card-wrapper">
+          
+          <div class="package-selected-ribbon">
+            <div class="ribbon-left">
+              <span class="ribbon-tag"><i class="fa-solid fa-fire"></i> CONFIGURING PACKAGE</span>
+              <h2 class="ribbon-name" id="displayPackageName">Zoro Mix (Package 1)</h2>
+            </div>
+            <div class="ribbon-right">
+              <span class="ribbon-price"><i class="fa-brands fa-whatsapp"></i> Quote per head</span>
+            </div>
+          </div>
+
+          <div class="form-header-area">
+            <h1 class="form-title">Event Details & Guest Count</h1>
+            <p class="form-subtitle">Tell us when and where your celebration is taking place so we can prepare your quote.</p>
+          </div>
+
+          <form id="eventDetailsForm" class="event-form-grid">
+
+            <!-- City Selection -->
+            <div class="form-group">
+              <label for="eventCity" class="form-label">
+                <i class="fa-solid fa-city label-icon red"></i> City
+              </label>
+              <div class="input-wrap">
+                <input type="text" id="eventCity" name="city" value="Noida" readonly class="input-box readonly" />
+                <i class="fa-solid fa-lock trailing-icon"></i>
+              </div>
+            </div>
+
+            <!-- Occasion Selection -->
+            <div class="form-group">
+              <label for="eventOccasion" class="form-label">
+                <i class="fa-solid fa-cake-candles label-icon orange"></i> Occasion
+              </label>
+              <div class="input-wrap select-wrap">
+                <select id="eventOccasion" name="occasion" class="input-box" required>
+                  <option value="Birthday Party" selected>Birthday Party</option>
+                  <option value="House Party">House Party / Get Together</option>
+                  <option value="Corporate Meeting">Corporate Lunch / Meeting</option>
+                  <option value="Wedding / Engagement">Wedding / Pre-Wedding</option>
+                  <option value="Festival Gathering">Festival Gathering</option>
+                  <option value="Other">Other Celebration</option>
+                </select>
+                <i class="fa-solid fa-chevron-down select-arrow"></i>
+              </div>
+            </div>
+
+            <!-- Event Date -->
+            <div class="form-group">
+              <label for="eventDate" class="form-label">
+                <i class="fa-solid fa-calendar-days label-icon yellow"></i> Event Date
+              </label>
+              <div class="input-wrap">
+                <input type="date" id="eventDate" name="eventDate" class="input-box" required />
+              </div>
+            </div>
+
+            <!-- Delivery Time Slot -->
+            <div class="form-group">
+              <label for="deliveryTime" class="form-label">
+                <i class="fa-regular fa-clock label-icon red"></i> Delivery Time
+              </label>
+              <div class="input-wrap select-wrap">
+                <select id="deliveryTime" name="deliveryTime" class="input-box" required>
+                  <option value="12:00 PM - 12:30 PM">12:00 PM - 12:30 PM (Lunch)</option>
+                  <option value="1:00 PM - 1:30 PM">1:00 PM - 1:30 PM</option>
+                  <option value="3:30 PM - 4:00 PM" selected>✓ 3:30 PM - 4:00 PM (Hi-Tea)</option>
+                  <option value="7:30 PM - 8:00 PM">7:30 PM - 8:00 PM (Dinner)</option>
+                  <option value="8:30 PM - 9:00 PM">8:30 PM - 9:00 PM</option>
+                </select>
+                <i class="fa-solid fa-chevron-down select-arrow"></i>
+              </div>
+            </div>
+
+            <!-- Guest Count Stepper (Rule: Minimum 10 Persons) -->
+            <div class="form-group full-width">
+              <div class="counter-card-header">
+                <div>
+                  <label for="vegGuests" class="form-label mb-0">
+                    <i class="fa-solid fa-users label-icon green"></i> Number of Guests (Minimum 10)
+                  </label>
+                  <p class="counter-subtext">Calculated per head. Includes sealed packaging and individual cutlery kits.</p>
+                </div>
+                <div class="discount-pill">
+                  <i class="fa-solid fa-bolt"></i> 25+ Persons = Volume Discount
+                </div>
+              </div>
+
+              <div class="counter-interactive-box">
+                <button type="button" class="btn-step dec" data-target="vegGuests" aria-label="Decrease persons">
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+                <div class="counter-display">
+                  <input type="number" id="vegGuests" name="vegGuests" value="10" min="10" max="500" class="input-counter" />
+                  <span class="counter-unit">Persons</span>
+                </div>
+                <button type="button" class="btn-step inc" data-target="vegGuests" aria-label="Increase persons">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Mandatory Eco-Friendly Packaging Agreement -->
+            <div class="form-group full-width">
+              <div class="eco-optin-card locked">
+                <input 
+                  type="checkbox" 
+                  id="ecoPackagingCheck" 
+                  name="ecoPackaging" 
+                  class="eco-checkbox" 
+                  checked 
+                  required 
+                  onclick="return false;" 
+                  title="Mandatory Eco Standard" 
+                />
+                <span class="eco-label-content">
+                  <span class="eco-badge-row">
+                    <span class="mandatory-tag"><i class="fa-solid fa-shield-halved"></i> MANDATORY ECO STANDARD</span>
+                  </span>
+                  <span class="eco-text">
+                    I agree to support and promote the use of biodegradable packaging for my order by paying an additional <strong>₹149</strong>.
+                  </span>
+                  <span class="eco-sub">
+                    100% certified plant-based cornstarch bento trays and degradable seal wraps to eliminate single-use plastics.
+                  </span>
+                </span>
+              </div>
+            </div>
+
+            <!-- Pure Veg Kitchen Banner -->
+            <div class="pure-veg-pledge-banner full-width">
+              <div class="pledge-icon"><i class="fa-solid fa-leaf"></i></div>
+              <div class="pledge-text">
+                <strong>100% Certified Pure Veg Kitchen</strong>
+                <span>Prepared with high-grade hygienic ingredients, pure desi ghee, and zero cross-contamination.</span>
+              </div>
+            </div>
+
+          </form>
+        </section>
+
+        <!-- RIGHT COLUMN: Order Summary Sidebar -->
+        <aside class="order-summary-sidebar">
+          <div class="sticky-bill-card">
+            
+            <div class="bill-header">
+              <span class="bill-tag"><i class="fa-solid fa-file-invoice"></i> INQUIRY SUMMARY</span>
+              <h3 class="bill-title">Order Overview</h3>
+            </div>
+
+            <div class="bill-breakdown-list">
+              <div class="bill-row">
+                <span class="bill-label">Package Name</span>
+                <span class="bill-value font-bold" id="billSummaryPackage">Zoro Mix (Package 1)</span>
+              </div>
+              <div class="bill-row">
+                <span class="bill-label">Total Guests</span>
+                <span class="bill-value" id="totalGuestCount">10 Persons</span>
+              </div>
+              <div class="bill-row">
+                <span class="bill-label">Custom Menu</span>
+                <span class="bill-value tag-free">Selected</span>
+              </div>
+              <div class="bill-row">
+                <span class="bill-label">Biodegradable Packaging</span>
+                <span class="bill-value" id="ecoPackStatus" style="color: #16A34A; font-weight: 800;">₹149 (Mandatory)</span>
+              </div>
+              <div class="bill-row">
+                <span class="bill-label">Hot Warm Delivery</span>
+                <span class="bill-value tag-free">Guaranteed</span>
+              </div>
+            </div>
+
+            <div class="bill-total-row">
+              <div class="total-text-group">
+                <span class="grand-label">Pricing Mode</span>
+                <span class="tax-note">Quote shared per head by our Zoros</span>
+              </div>
+              <div class="grand-price-val" style="font-size: 1.15rem; color: var(--fire-orange);">Quote On Request</div>
+            </div>
+
+            <div class="bill-cta-wrap">
+              <button type="submit" form="eventDetailsForm" class="btn-customize-menu">
+                <span>Request Zoro Quote</span>
+                <i class="fa-brands fa-whatsapp"></i>
+              </button>
+            </div>
+
+            <div class="concierge-link-box">
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0; padding: 0 10px;">
+                Our Zoro team will calculate the per-head pricing (including ₹149 eco-packaging) and confirm delivery availability directly on WhatsApp.
+              </p>
+            </div>
+
+            <div class="security-badges" style="margin-top: 1rem;">
+              <span><i class="fa-solid fa-shield-halved"></i> Spill-Proof Sealed</span>
+              <span><i class="fa-solid fa-leaf"></i> 100% Biodegradable</span>
+            </div>
+
+          </div>
+        </aside>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col brand-info">
+        <a href="index.html" class="brand-logo zoro-crest-brand footer-logo">
+          <div class="logo-crest-wrapper" style="width: 44px; height: 44px;">
+            <picture>
+              <source srcset="images/logo.jpeg" type="image/jpeg">
+              <source srcset="images/logo.jpg" type="image/jpeg">
+              <source srcset="images/logo.png" type="image/png">
+              <img src="images/logo.jpeg" onerror="this.onerror=null; this.src='images/logo.jpg';" alt="FoodZoro Mascot Logo" class="brand-crest-img" />
+            </picture>
+          </div>
+          <div class="brand-title-wrap">
+            <span class="brand-brush-title" style="color: #FFF; font-size: 1.5rem;">
+              <span style="color: #FFF;">FOOD</span><span class="text-brush-red">Z</span><span style="color: #FFF;">ORO</span>
+            </span>
+            <span class="brand-tagline" style="color: #FFB703;">LOVE IT &bull; ZORO IT</span>
+          </div>
+        </a>
+        <p class="footer-text">
+          Delivering hygienic, premium quality portioned catering meal boxes straight to your doorstep.
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://wa.me/919810788986" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="col-title">Our Services</h4>
+        <ul class="footer-menu">
+          <li><a href="packages.html">Meal Boxes</a></li>
+          <li><a href="packages.html">Party Platters</a></li>
+          <li><a href="gallery.html">Packaging Demo</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="col-title">Quick Links</h4>
+        <ul class="footer-menu">
+          <li><a href="gallery.html">Quality Showcase</a></li>
+          <li><a href="gallery.html#testimonials-section">Reviews</a></li>
+          <li><a href="packages.html">Explore Packages</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="col-title">Contact & Support</h4>
+        <p class="contact-line"><i class="fa-solid fa-phone"></i> +91 98107 88986</p>
+        <p class="contact-line"><i class="fa-solid fa-envelope"></i> orders@foodzoro.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 FOODZORO. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/event-details.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const stored = localStorage.getItem('current_selected_package');
+      const sideName = document.getElementById('billSummaryPackage');
+      if (stored && sideName) {
+        try {
+          const parsed = JSON.parse(stored);
+          if (parsed.name) sideName.textContent = parsed.name;
+        } catch(e) {}
+      }
+    });
+  </script>
+</body>
+</html>

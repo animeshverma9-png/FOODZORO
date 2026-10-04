@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FOODZORO - India's First Pure Veg Online Catering Platform</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- Hollow Ninja Shapes Wallpaper -->
+  <style>
+    html, body {
+      background-color: #FFF9F3 !important;
+      background-image: url("data:image/svg+xml,%3Csvg width='260' height='260' viewBox='0 0 260 260' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23EA580C' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round' opacity='0.2'%3E%3Cpath d='M40,20 Q48,38 65,40 Q48,43 40,60 Q32,43 15,40 Q32,38 40,20 Z'/%3E%3Ccircle cx='40' cy='40' r='4'/%3E%3Cpath d='M190,20 L234,64 M230,60 L238,68'/%3E%3Cpath d='M234,20 L190,64 M194,60 L186,68'/%3E%3Ccircle cx='212' cy='42' r='2.5' fill='%23EA580C'/%3E%3Cpolygon points='45,110 52,135 48,150 42,150 38,135'/%3E%3Cline x1='45' y1='150' x2='45' y2='168'/%3E%3Ccircle cx='45' cy='173' r='4.5'/%3E%3Cpath d='M195,115 L200,127 L213,122 L207,135 L220,140 L207,145 L213,158 L200,153 L195,165 L190,153 L177,158 L183,145 L170,140 L183,135 L177,122 L190,127 Z'/%3E%3Ccircle cx='195' cy='140' r='3.5'/%3E%3Cpath d='M60,205 Q75,200 80,215 Q85,230 70,235 Q55,240 50,225 Q45,210 60,205 Z' stroke-dasharray='3 3'/%3E%3Ccircle cx='65' cy='220' r='3' fill='%23EA580C'/%3E%3Cpath d='M160,240 C185,225 210,195 230,170'/%3E%3Cline x1='160' y1='240' x2='152' y2='248'/%3E%3Ccircle cx='150' cy='250' r='2' fill='%23EA580C'/%3E%3Cpath d='M125,70 L127,76 L133,78 L127,80 L125,86 L123,80 L117,78 L123,76 Z'/%3E%3Cpath d='M125,180 L127,184 L131,185 L127,186 L125,190 L123,186 L119,185 L123,184 Z'/%3E%3C/g%3E%3C/svg%3E") !important;
+      background-repeat: repeat !important;
+      background-size: 260px 260px !important;
+      background-attachment: fixed !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Dark Announcement Strip with Bulk Food Badge -->
+  <div class="announcement-strip-black">
+    <div class="ticker-wrapper">
+      <div class="ticker-track">
+        <div class="ticker-element"><i class="fa-solid fa-bolt" style="color: #EF4444;"></i> Instant Bulk Customization</div>
+        <div class="ticker-separator">|</div>
+        <div class="ticker-element"><i class="fa-solid fa-truck-fast" style="color: #EF4444;"></i> On-Time Warm Delivery</div>
+        <div class="ticker-separator">|</div>
+        <div class="ticker-element"><i class="fa-solid fa-leaf" style="color: #22C55E;"></i> 100% Pure Veg Kitchen</div>
+        <div class="ticker-separator">|</div>
+        <div class="ticker-element"><i class="fa-solid fa-box-open" style="color: #EF4444;"></i> Spill-Proof Airtight Packaging</div>
+        
+        <div class="ticker-element"><i class="fa-solid fa-bolt" style="color: #EF4444;"></i> Instant Bulk Customization</div>
+        <div class="ticker-separator">|</div>
+        <div class="ticker-element"><i class="fa-solid fa-truck-fast" style="color: #EF4444;"></i> On-Time Warm Delivery</div>
+        <div class="ticker-separator">|</div>
+        <div class="ticker-element"><i class="fa-solid fa-leaf" style="color: #22C55E;"></i> 100% Pure Veg Kitchen</div>
+        <div class="ticker-separator">|</div>
+        <div class="ticker-element"><i class="fa-solid fa-box-open" style="color: #EF4444;"></i> Spill-Proof Airtight Packaging</div>
+      </div>
+    </div>
+    <div class="bulk-food-badge">
+      <i class="fa-solid fa-crown"></i> BULK FOOD MADE EASY
+    </div>
+  </div>
+
+  <!-- Sticky Navbar Component with Clean In-line Mascot Logo -->
+  <header class="navbar">
+    <div class="nav-container">
+      
+      <!-- FoodZoro Brand: In-line Circular Logo + Brush Typography -->
+      <div class="nav-left">
+        <a href="index.html" class="brand-logo zoro-crest-brand" aria-label="FoodZoro Home">
+          <div class="logo-crest-wrapper">
+            <picture>
+              <source srcset="images/logo.jpeg" type="image/jpeg">
+              <source srcset="images/logo.jpg" type="image/jpeg">
+              <source srcset="images/logo.png" type="image/png">
+              <img src="images/logo.jpeg" onerror="this.onerror=null; this.src='images/logo.jpg';" alt="FoodZoro Mascot Logo" class="brand-crest-img" />
+            </picture>
+          </div>
+          <div class="brand-title-wrap">
+            <span class="brand-brush-title">
+              <span class="text-brush-black">FOOD</span><span class="text-brush-red">Z</span><span class="text-brush-black">ORO</span>
+            </span>
+            <span class="brand-tagline">LOVE IT &bull; ZORO IT</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Center Navigation Pill (2 Buttons Only) -->
+      <nav class="nav-center-pill">
+        <a href="index.html" class="nav-pill-btn active">
+          <i class="fa-solid fa-house"></i> Home
+        </a>
+        <a href="packages.html" class="nav-pill-btn">
+          <i class="fa-solid fa-bowl-food"></i> Meal Boxes
+        </a>
+      </nav>
+
+      <!-- Nav Right Actions -->
+      <div class="nav-right-actions">
+        <a 
+          href="https://wa.me/919810788986?text=Hi%20FoodZoro!%20I%20want%20to%20inquire%20about%20catering%20and%20meal%20boxes." 
+          target="_blank" 
+          class="btn-zoro-chat"
+          title="Chat directly with our Zoros"
+        >
+          <div class="chat-icon-orb">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+
+          <div class="chat-text-meta">
+            <span class="chat-badge-tag">⚡ INSTANT QUOTE</span>
+            <span class="chat-headline">Chat with Zoros</span>
+          </div>
+
+          <div class="chat-arrow-badge">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+
+        <a href="packages.html" class="cart-icon-btn" aria-label="Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-badge" id="cartBadge">3</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-carousel-section">
+    <div class="hero-unified-card" id="heroCarousel">
+      
+      <!-- Permanent Left Content -->
+      <div class="hero-static-content">
+        <span class="slide-tag pure-veg-tag">
+          <i class="fa-solid fa-leaf"></i> 100% CERTIFIED PURE VEG
+        </span>
+        <h1 class="slide-title">
+          India's First Pure Veg <br />
+          <span class="highlight-text">Online Catering Platform</span>
+        </h1>
+        <p class="slide-desc">
+          Precision-cut taste, authentic royal recipes, and airtight hygienic boxes curated for birthdays, get-togethers, and office sprints.
+        </p>
+        
+        <div class="hero-dual-cta">
+          <a href="packages.html" class="btn-hero-primary">
+            <span>Explore Our Packages</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="https://wa.me/919810788986?text=Hi!%20I%20need%20an%20urgent%20catering%20quote." target="_blank" class="btn-hero-urgent">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Contact Us for Urgent Quote</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Package Slider Showcase -->
+      <div class="hero-slider-stage" style="position: relative; width: 100%; height: 420px; border-radius: 22px; overflow: hidden; background: #FFFDF9; box-shadow: 0 16px 36px rgba(0,0,0,0.25); border: 4px solid rgba(255,255,255,0.25);">
+        <div id="sliderTrack" style="display: flex; width: 600%; height: 100%; transition: transform 0.65s cubic-bezier(0.25, 1, 0.5, 1); will-change: transform;">
+          <div style="width: calc(100% / 6); height: 100%; flex-shrink: 0;"><img src="images/zoromix.png" alt="Zoro Mix" style="width: 100%; height: 100%; object-fit: cover; display: block;" /></div>
+          <div style="width: calc(100% / 6); height: 100%; flex-shrink: 0;"><img src="images/zoro snack attack.png" alt="Zoro Snack Attack" style="width: 100%; height: 100%; object-fit: cover; display: block;" /></div>
+          <div style="width: calc(100% / 6); height: 100%; flex-shrink: 0;"><img src="images/zoro wok.png" alt="Zoro Wok" style="width: 100%; height: 100%; object-fit: cover; display: block;" /></div>
+          <div style="width: calc(100% / 6); height: 100%; flex-shrink: 0;"><img src="images/desi zoro.png" alt="Desi Zoro" style="width: 100%; height: 100%; object-fit: cover; display: block;" /></div>
+          <div style="width: calc(100% / 6); height: 100%; flex-shrink: 0;"><img src="images/zoro feast.png" alt="Zoro Feast" style="width: 100%; height: 100%; object-fit: cover; display: block;" /></div>
+          <div style="width: calc(100% / 6); height: 100%; flex-shrink: 0;"><img src="images/build your zoro.png" alt="Build Your Zoro" style="width: 100%; height: 100%; object-fit: cover; display: block;" /></div>
+        </div>
+
+        <button class="carousel-btn prev" id="prevSlide" aria-label="Previous Slide">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn next" id="nextSlide" aria-label="Next Slide">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="carousel-dots" id="carouselDots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+          <span class="dot" data-index="3"></span>
+          <span class="dot" data-index="4"></span>
+          <span class="dot" data-index="5"></span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Quick Tile Option: Top 3 Most Popular Packages -->
+  <section class="quick-packages-section">
+    <div class="quick-section-header">
+      <span class="quick-tag"><i class="fa-solid fa-fire"></i> CROWD FAVORITES</span>
+      <h2 class="quick-title">Most Popular <span class="highlight-text">Meal Box Drops</span></h2>
+      <p class="quick-subtitle">Hand-picked by over 5,000+ happy hosts across Delhi NCR. Tap to customize instantly.</p>
+    </div>
+
+    <div class="quick-tiles-grid">
+      <!-- Tile 1: Zoro Mix -->
+      <article class="quick-tile-card">
+        <div class="tile-img-wrap">
+          <img src="images/zoromix.png" alt="Zoro Mix" />
+          <span class="tile-badge badge-bestseller">⭐ #1 Bestseller</span>
+          <span class="tile-diet-badge"><i class="fa-solid fa-leaf"></i> Pure Veg</span>
+        </div>
+        <div class="tile-content">
+          <div class="tile-meta">
+            <h3 class="tile-name">Zoro Mix (Package 1)</h3>
+            <span class="tile-rating"><i class="fa-solid fa-star"></i> 4.9 (1.8k)</span>
+          </div>
+          <p class="tile-desc">3 Snacks (Tandoori/Chinese/Continental) + 1 Noodles + 1 Fried Rice + 1 Dessert.</p>
+          <div class="tile-footer">
+            <div class="tile-pricing">
+              <span class="tile-price-label">Pricing</span>
+              <span class="tile-price">Quote <small>on request</small></span>
+            </div>
+            <a href="packages.html" class="btn-tile-select">
+              <span>Select Box</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tile 2: Zoro Feast -->
+      <article class="quick-tile-card popular-highlight">
+        <div class="tile-img-wrap">
+          <img src="images/zoro feast.png" alt="Zoro Feast" />
+          <span class="tile-badge badge-signature">🔥 Signature Feast</span>
+          <span class="tile-diet-badge"><i class="fa-solid fa-leaf"></i> Pure Veg</span>
+        </div>
+        <div class="tile-content">
+          <div class="tile-meta">
+            <h3 class="tile-name">Zoro Feast (Package 5)</h3>
+            <span class="tile-rating"><i class="fa-solid fa-star"></i> 5.0 (3.2k)</span>
+          </div>
+          <p class="tile-desc">3 Snacks + 2 Indian Main Course Items + 3 Choices in Rice and Breads + 1 Dessert.</p>
+          <div class="tile-footer">
+            <div class="tile-pricing">
+              <span class="tile-price-label">Pricing</span>
+              <span class="tile-price">Quote <small>on request</small></span>
+            </div>
+            <a href="packages.html" class="btn-tile-select">
+              <span>Select Box</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tile 3: Desi Zoro -->
+      <article class="quick-tile-card">
+        <div class="tile-img-wrap">
+          <img src="images/desi zoro.png" alt="Desi Zoro" />
+          <span class="tile-badge badge-feast">👑 Royal Thali</span>
+          <span class="tile-diet-badge"><i class="fa-solid fa-leaf"></i> Pure Veg</span>
+        </div>
+        <div class="tile-content">
+          <div class="tile-meta">
+            <h3 class="tile-name">Desi Zoro (Package 4)</h3>
+            <span class="tile-rating"><i class="fa-solid fa-star"></i> 5.0 (2.5k)</span>
+          </div>
+          <p class="tile-desc">3 Indian Main Course Curries + 3 Choices in Rice & Breads + 1 Royal Dessert.</p>
+          <div class="tile-footer">
+            <div class="tile-pricing">
+              <span class="tile-price-label">Pricing</span>
+              <span class="tile-price">Quote <small>on request</small></span>
+            </div>
+            <a href="packages.html" class="btn-tile-select">
+              <span>Select Box</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="quick-bottom-action">
+      <a href="packages.html" class="btn-explore-all">
+        <span>View All Curated Packages</span>
+        <i class="fa-solid fa-arrow-right-long"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col brand-info">
+        <a href="index.html" class="brand-logo zoro-crest-brand footer-logo">
+          <div class="logo-crest-wrapper" style="width: 44px; height: 44px;">
+            <picture>
+              <source srcset="images/logo.jpeg" type="image/jpeg">
+              <source srcset="images/logo.jpg" type="image/jpeg">
+              <source srcset="images/logo.png" type="image/png">
+              <img src="images/logo.jpeg" onerror="this.onerror=null; this.src='images/logo.jpg';" alt="FoodZoro Mascot Logo" class="brand-crest-img" />
+            </picture>
+          </div>
+          <div class="brand-title-wrap">
+            <span class="brand-brush-title" style="color: #FFF; font-size: 1.5rem;">
+              <span style="color: #FFF;">FOOD</span><span class="text-brush-red">Z</span><span style="color: #FFF;">ORO</span>
+            </span>
+            <span class="brand-tagline" style="color: #FFB703;">LOVE IT &bull; ZORO IT</span>
+          </div>
+        </a>
+        <p class="footer-text">India's dedicated pure-vegetarian catering platform. Fresh, hygienic meals packed hot to order.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://wa.me/919810788986" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="col-title">Our Services</h4>
+        <ul class="footer-menu">
+          <li><a href="packages.html">Zoro Mix</a></li>
+          <li><a href="packages.html">Snack Attack</a></li>
+          <li><a href="packages.html">Desi Zoro Thali</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="col-title">Quick Links</h4>
+        <ul class="footer-menu">
+          <li><a href="gallery.html">Our Packaging</a></li>
+          <li><a href="gallery.html">Testimonials</a></li>
+          <li><a href="packages.html">Pricing Configurator</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="col-title">Contact & Support</h4>
+        <p class="contact-line"><i class="fa-solid fa-phone"></i> +91 98107 88986</p>
+        <p class="contact-line"><i class="fa-solid fa-envelope"></i> support@foodzoro.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 FOODZORO. All Rights Reserved. 100% Pure Vegetarian Catering.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const track = document.getElementById('sliderTrack');
+      const dots = document.querySelectorAll('#carouselDots .dot');
+      const prevBtn = document.getElementById('prevSlide');
+      const nextBtn = document.getElementById('nextSlide');
+      const totalSlides = 6;
+      let currentIndex = 0;
+      let timer = null;
+
+      function updateSlide(idx) {
+        if (idx < 0) idx = totalSlides - 1;
+        if (idx >= totalSlides) idx = 0;
+        currentIndex = idx;
+
+        if (track) {
+          const shift = (currentIndex * 100) / totalSlides;
+          track.style.transform = 'translateX(-' + shift + '%)';
+        }
+
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('active', i === currentIndex);
+        });
+      }
+
+      function startTimer() {
+        clearInterval(timer);
+        timer = setInterval(() => {
+          updateSlide(currentIndex + 1);
+        }, 3000);
+      }
+
+      if (nextBtn) {
+        nextBtn.onclick = function (e) {
+          e.preventDefault();
+          updateSlide(currentIndex + 1);
+          startTimer();
+        };
+      }
+
+      if (prevBtn) {
+        prevBtn.onclick = function (e) {
+          e.preventDefault();
+          updateSlide(currentIndex - 1);
+          startTimer();
+        };
+      }
+
+      dots.forEach((dot) => {
+        dot.onclick = function () {
+          const targetIdx = parseInt(this.getAttribute('data-index'), 10);
+          updateSlide(targetIdx);
+          startTimer();
+        };
+      });
+
+      const container = track ? track.parentElement : null;
+      if (container) {
+        container.onmouseenter = () => clearInterval(timer);
+        container.onmouseleave = () => startTimer();
+      }
+
+      updateSlide(0);
+      startTimer();
+    });
+  </script>
+</body>
+</html>

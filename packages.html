@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curated Meal Packages - FOODZORO</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/packages.css" />
+
+  <!-- Hollow Ninja Shapes Wallpaper -->
+  <style>
+    html, body {
+      background-color: #FFF9F3 !important;
+      background-image: url("data:image/svg+xml,%3Csvg width='260' height='260' viewBox='0 0 260 260' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23EA580C' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round' opacity='0.2'%3E%3Cpath d='M40,20 Q48,38 65,40 Q48,43 40,60 Q32,43 15,40 Q32,38 40,20 Z'/%3E%3Ccircle cx='40' cy='40' r='4'/%3E%3Cpath d='M190,20 L234,64 M230,60 L238,68'/%3E%3Cpath d='M234,20 L190,64 M194,60 L186,68'/%3E%3Ccircle cx='212' cy='42' r='2.5' fill='%23EA580C'/%3E%3Cpolygon points='45,110 52,135 48,150 42,150 38,135'/%3E%3Cline x1='45' y1='150' x2='45' y2='168'/%3E%3Ccircle cx='45' cy='173' r='4.5'/%3E%3Cpath d='M195,115 L200,127 L213,122 L207,135 L220,140 L207,145 L213,158 L200,153 L195,165 L190,153 L177,158 L183,145 L170,140 L183,135 L177,122 L190,127 Z'/%3E%3Ccircle cx='195' cy='140' r='3.5'/%3E%3Cpath d='M60,205 Q75,200 80,215 Q85,230 70,235 Q55,240 50,225 Q45,210 60,205 Z' stroke-dasharray='3 3'/%3E%3Ccircle cx='65' cy='220' r='3' fill='%23EA580C'/%3E%3Cpath d='M160,240 C185,225 210,195 230,170'/%3E%3Cline x1='160' y1='240' x2='152' y2='248'/%3E%3Ccircle cx='150' cy='250' r='2' fill='%23EA580C'/%3E%3Cpath d='M125,70 L127,76 L133,78 L127,80 L125,86 L123,80 L117,78 L123,76 Z'/%3E%3Cpath d='M125,180 L127,184 L131,185 L127,186 L125,190 L123,186 L119,185 L123,184 Z'/%3E%3C/g%3E%3C/svg%3E") !important;
+      background-repeat: repeat !important;
+      background-size: 260px 260px !important;
+      background-attachment: fixed !important;
+    }
+
+    @keyframes zoroBounceIn {
+      0% { opacity: 0; transform: scale(0.7) translateY(30px); }
+      50% { transform: scale(1.04) translateY(-10px); }
+      100% { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    @keyframes warningPulse {
+      0% { box-shadow: 0 0 0 0 rgba(217, 4, 41, 0.45); }
+      70% { box-shadow: 0 0 0 25px rgba(217, 4, 41, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(217, 4, 41, 0); }
+    }
+
+    @keyframes swordSlash {
+      0% { transform: rotate(-45deg) scale(0); opacity: 0; }
+      50% { transform: rotate(0deg) scale(1.2); opacity: 1; }
+      100% { transform: rotate(0deg) scale(1); opacity: 1; }
+    }
+
+    .animated-zoro-card {
+      animation: zoroBounceIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, warningPulse 2.2s infinite;
+      border: 3px solid #D90429 !important;
+      background: linear-gradient(145deg, #FFFDF9 0%, #FFF5F5 100%) !important;
+    }
+
+    .animated-zoro-icon {
+      animation: swordSlash 0.6s ease-out 0.2s both;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Dark Announcement Strip with Bulk Food Badge -->
+  <div class="announcement-strip-black">
+    <div class="ticker-wrapper">
+      <div class="ticker-track">
+        <div class="ticker-element"><i class="fa-solid fa-bolt" style="color: #EF4444;"></i> Instant Bulk Customization</div>
+        <div class="ticker-separator">|</div>
+        <div class="ticker-element"><i class="fa-solid fa-truck-fast" style="color: #EF4444;"></i> On-Time Warm Delivery</div>
+        <div class="ticker-separator">|</div>
+        <div class="ticker-element"><i class="fa-solid fa-leaf" style="color: #22C55E;"></i> 100% Pure Veg Kitchen</div>
+        <div class="ticker-separator">|</div>
+        <div class="ticker-element"><i class="fa-solid fa-box-open" style="color: #EF4444;"></i> Spill-Proof Airtight Packaging</div>
+        
+        <div class="ticker-element"><i class="fa-solid fa-bolt" style="color: #EF4444;"></i> Instant Bulk Customization</div>
+        <div class="ticker-separator">|</div>
+        <div class="ticker-element"><i class="fa-solid fa-truck-fast" style="color: #EF4444;"></i> On-Time Warm Delivery</div>
+        <div class="ticker-separator">|</div>
+        <div class="ticker-element"><i class="fa-solid fa-leaf" style="color: #22C55E;"></i> 100% Pure Veg Kitchen</div>
+        <div class="ticker-separator">|</div>
+        <div class="ticker-element"><i class="fa-solid fa-box-open" style="color: #EF4444;"></i> Spill-Proof Airtight Packaging</div>
+      </div>
+    </div>
+    <div class="bulk-food-badge">
+      <i class="fa-solid fa-crown"></i> BULK FOOD MADE EASY
+    </div>
+  </div>
+
+  <!-- Sticky Navbar Component with Clean In-line Mascot Logo -->
+  <header class="navbar">
+    <div class="nav-container">
+      
+      <!-- FoodZoro Brand: In-line Circular Logo + Brush Typography -->
+      <div class="nav-left">
+        <a href="index.html" class="brand-logo zoro-crest-brand" aria-label="FoodZoro Home">
+          <div class="logo-crest-wrapper">
+            <picture>
+              <source srcset="images/logo.jpeg" type="image/jpeg">
+              <source srcset="images/logo.jpg" type="image/jpeg">
+              <source srcset="images/logo.png" type="image/png">
+              <img src="images/logo.jpeg" onerror="this.onerror=null; this.src='images/logo.jpg';" alt="FoodZoro Mascot Logo" class="brand-crest-img" />
+            </picture>
+          </div>
+          <div class="brand-title-wrap">
+            <span class="brand-brush-title">
+              <span class="text-brush-black">FOOD</span><span class="text-brush-red">Z</span><span class="text-brush-black">ORO</span>
+            </span>
+            <span class="brand-tagline">LOVE IT &bull; ZORO IT</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Center Navigation Pill (2 Buttons Only) -->
+      <nav class="nav-center-pill">
+        <a href="index.html" class="nav-pill-btn">
+          <i class="fa-solid fa-house"></i> Home
+        </a>
+        <a href="packages.html" class="nav-pill-btn active">
+          <i class="fa-solid fa-bowl-food"></i> Meal Boxes
+        </a>
+      </nav>
+
+      <!-- Nav Right Actions -->
+      <div class="nav-right-actions">
+        <a 
+          href="https://wa.me/919810788986?text=Hi%20FoodZoro!%20I%20want%20to%20inquire%20about%20catering%20and%20meal%20boxes." 
+          target="_blank" 
+          class="btn-zoro-chat"
+          title="Chat directly with our Zoros"
+        >
+          <div class="chat-icon-orb">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+
+          <div class="chat-text-meta">
+            <span class="chat-badge-tag">⚡ INSTANT QUOTE</span>
+            <span class="chat-headline">Chat with Zoros</span>
+          </div>
+
+          <div class="chat-arrow-badge">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+
+        <a href="packages.html" class="cart-icon-btn" aria-label="Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-badge" id="cartBadge">3</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="boxes-cover-section">
+    <div class="cover-backdrop">
+      <div class="cover-content">
+        <div class="vibe-pill"><i class="fa-solid fa-wand-magic-sparkles"></i> 100% Pure Veg Master Menu</div>
+        <h1 class="cover-title">Curated <span class="gradient-text">Food Zoro</span> Packages</h1>
+        <p class="cover-desc">Select from our chef-crafted packages or build your own customized spread directly from our master kitchen menu.</p>
+        
+        <div class="diet-filter-wrapper">
+          <button class="filter-tab active" data-filter="veg"><i class="fa-solid fa-circle-check"></i> Pure Veg Packages</button>
+          <button class="filter-tab nonveg-tab" data-filter="nonveg"><i class="fa-solid fa-drumstick-bite"></i> Non-Veg Special</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="packages-container">
+    <div id="packagesMainContent">
+      <div class="packages-grid">
+
+        <!-- Package 1: Zoro Mix -->
+        <article class="box-card" data-package-id="pkg-1" data-base-price="299">
+          <div class="box-image-wrap">
+            <img src="images/zoromix.png" alt="Zoro Mix" />
+            <span class="badge-accent red">Bestseller</span>
+            <span class="diet-badge veg"><i class="fa-solid fa-leaf"></i> Veg</span>
+          </div>
+          <div class="box-details">
+            <div class="box-header">
+              <h3 class="box-name">Zoro Mix (Package 1)</h3>
+              <div class="rating"><i class="fa-solid fa-star"></i> 4.9</div>
+            </div>
+
+            <div class="box-breakdown-list">
+              <div class="breakdown-item">
+                <span class="qty-pill">3 Items</span>
+                <span class="item-text">Snacks <small>(Tandoori / Chinese / Continental)</small></span>
+              </div>
+              <div class="breakdown-item">
+                <span class="qty-pill">1 Item</span>
+                <span class="item-text">Noodles Choice</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="qty-pill">1 Item</span>
+                <span class="item-text">Fried Rice Choice</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="qty-pill">1 Item</span>
+                <span class="item-text">Royal Dessert</span>
+              </div>
+            </div>
+
+            <div class="perks-tags">
+              <span><i class="fa-solid fa-fire"></i> 3 Snacks</span>
+              <span><i class="fa-solid fa-bowl-rice"></i> Noodles + Rice</span>
+              <span><i class="fa-solid fa-cake-candles"></i> Dessert</span>
+            </div>
+            <button type="button" class="btn-view-menu"><i class="fa-solid fa-sliders"></i> Customize Dishes</button>
+            <div class="box-card-footer">
+              <div class="price-box">
+                <span class="price-label">Pricing</span>
+                <span class="price-val">Quote <small class="price-suffix">on request</small></span>
+              </div>
+              <div class="action-controls">
+                <div class="qty-counter">
+                  <button class="qty-btn dec">-</button>
+                  <span class="qty-val">10</span>
+                  <button class="qty-btn inc">+</button>
+                </div>
+                <button class="btn-add-cart"><i class="fa-solid fa-arrow-right"></i> Choose</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Package 2: Zoro Snack Attack -->
+        <article class="box-card" data-package-id="pkg-2" data-base-price="289">
+          <div class="box-image-wrap">
+            <img src="images/zoro snack attack.png" alt="Zoro Snack Attack" />
+            <span class="badge-accent orange">Snack Spread</span>
+            <span class="diet-badge veg"><i class="fa-solid fa-leaf"></i> Veg</span>
+          </div>
+          <div class="box-details">
+            <div class="box-header">
+              <h3 class="box-name">Zoro Snack Attack (Package 2)</h3>
+              <div class="rating"><i class="fa-solid fa-star"></i> 4.8</div>
+            </div>
+
+            <div class="box-breakdown-list">
+              <div class="breakdown-item highlight-snack">
+                <span class="qty-pill orange">6 Items</span>
+                <span class="item-text">Snack Selections <small>(Full Freedom: Tandoori, Chinese & Continental)</small></span>
+              </div>
+            </div>
+
+            <div class="perks-tags">
+              <span><i class="fa-solid fa-cookie-bite"></i> 6 Snacks</span>
+              <span><i class="fa-solid fa-bolt"></i> Party Starter</span>
+            </div>
+            <button type="button" class="btn-view-menu"><i class="fa-solid fa-sliders"></i> Customize Dishes</button>
+            <div class="box-card-footer">
+              <div class="price-box">
+                <span class="price-label">Pricing</span>
+                <span class="price-val">Quote <small class="price-suffix">on request</small></span>
+              </div>
+              <div class="action-controls">
+                <div class="qty-counter">
+                  <button class="qty-btn dec">-</button>
+                  <span class="qty-val">10</span>
+                  <button class="qty-btn inc">+</button>
+                </div>
+                <button class="btn-add-cart"><i class="fa-solid fa-arrow-right"></i> Choose</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Package 3: Zoro Wok -->
+        <article class="box-card" data-package-id="pkg-3" data-base-price="299">
+          <div class="box-image-wrap">
+            <img src="images/zoro wok.png" alt="Zoro Wok" />
+            <span class="badge-accent yellow">Asian Special</span>
+            <span class="diet-badge veg"><i class="fa-solid fa-leaf"></i> Veg</span>
+          </div>
+          <div class="box-details">
+            <div class="box-header">
+              <h3 class="box-name">Zoro Wok (Package 3)</h3>
+              <div class="rating"><i class="fa-solid fa-star"></i> 4.9</div>
+            </div>
+
+            <div class="box-breakdown-list">
+              <div class="breakdown-item">
+                <span class="qty-pill">3 Items</span>
+                <span class="item-text">Chinese Snacks <small>(Dry Starters)</small></span>
+              </div>
+              <div class="breakdown-item">
+                <span class="qty-pill">2 Items</span>
+                <span class="item-text">Wok Bases <small>(Noodles & Fried Rice Options)</small></span>
+              </div>
+              <div class="breakdown-item">
+                <span class="qty-pill">1 Item</span>
+                <span class="item-text">Chinese Main Course <small>(Rich Gravy Dish)</small></span>
+              </div>
+            </div>
+
+            <div class="perks-tags">
+              <span><i class="fa-solid fa-pepper-hot"></i> 3 Chinese Starters</span>
+              <span><i class="fa-solid fa-bowl-rice"></i> 2 Noodles/Rice</span>
+              <span><i class="fa-solid fa-fire-burner"></i> 1 Gravy</span>
+            </div>
+            <button type="button" class="btn-view-menu"><i class="fa-solid fa-sliders"></i> Customize Dishes</button>
+            <div class="box-card-footer">
+              <div class="price-box">
+                <span class="price-label">Pricing</span>
+                <span class="price-val">Quote <small class="price-suffix">on request</small></span>
+              </div>
+              <div class="action-controls">
+                <div class="qty-counter">
+                  <button class="qty-btn dec">-</button>
+                  <span class="qty-val">10</span>
+                  <button class="qty-btn inc">+</button>
+                </div>
+                <button class="btn-add-cart"><i class="fa-solid fa-arrow-right"></i> Choose</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Package 4: Desi Zoro -->
+        <article class="box-card" data-package-id="pkg-4" data-base-price="199">
+          <div class="box-image-wrap">
+            <img src="images/desi zoro.png" alt="Desi Zoro" />
+            <span class="badge-accent red">Royal Thali</span>
+            <span class="diet-badge veg"><i class="fa-solid fa-leaf"></i> Veg</span>
+          </div>
+          <div class="box-details">
+            <div class="box-header">
+              <h3 class="box-name">Desi Zoro (Package 4)</h3>
+              <div class="rating"><i class="fa-solid fa-star"></i> 5.0</div>
+            </div>
+
+            <div class="box-breakdown-list">
+              <div class="breakdown-item">
+                <span class="qty-pill">3 Items</span>
+                <span class="item-text">Indian Mains <small>(Royal Curries & Dals)</small></span>
+              </div>
+              <div class="breakdown-item">
+                <span class="qty-pill">3 Items</span>
+                <span class="item-text">Breads & Rice <small>(Naan, Roti & Rice)</small></span>
+              </div>
+              <div class="breakdown-item">
+                <span class="qty-pill">1 Item</span>
+                <span class="item-text">Royal Dessert</span>
+              </div>
+            </div>
+
+            <div class="perks-tags">
+              <span><i class="fa-solid fa-bowl-food"></i> 3 Indian Mains</span>
+              <span><i class="fa-solid fa-bread-slice"></i> 3 Breads/Rice</span>
+              <span><i class="fa-solid fa-cake-candles"></i> 1 Dessert</span>
+            </div>
+            <button type="button" class="btn-view-menu"><i class="fa-solid fa-sliders"></i> Customize Dishes</button>
+            <div class="box-card-footer">
+              <div class="price-box">
+                <span class="price-label">Pricing</span>
+                <span class="price-val">Quote <small class="price-suffix">on request</small></span>
+              </div>
+              <div class="action-controls">
+                <div class="qty-counter">
+                  <button class="qty-btn dec">-</button>
+                  <span class="qty-val">10</span>
+                  <button class="qty-btn inc">+</button>
+                </div>
+                <button class="btn-add-cart"><i class="fa-solid fa-arrow-right"></i> Choose</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Package 5: Zoro Feast -->
+        <article class="box-card" data-package-id="pkg-5" data-base-price="339">
+          <div class="box-image-wrap">
+            <img src="images/zoro feast.png" alt="Zoro Feast" />
+            <span class="badge-accent orange">Signature Feast</span>
+            <span class="diet-badge veg"><i class="fa-solid fa-leaf"></i> Veg</span>
+          </div>
+          <div class="box-details">
+            <div class="box-header">
+              <h3 class="box-name">Zoro Feast (Package 5)</h3>
+              <div class="rating"><i class="fa-solid fa-star"></i> 5.0</div>
+            </div>
+
+            <div class="box-breakdown-list">
+              <div class="breakdown-item">
+                <span class="qty-pill">3 Items</span>
+                <span class="item-text">Starters <small>(Tandoori / Chinese / Continental)</small></span>
+              </div>
+              <div class="breakdown-item">
+                <span class="qty-pill">2 Items</span>
+                <span class="item-text">Indian Mains <small>(Curries & Specialties)</small></span>
+              </div>
+              <div class="breakdown-item">
+                <span class="qty-pill">3 Items</span>
+                <span class="item-text">Breads & Rice <small>(Bread Assortment & Rice)</small></span>
+              </div>
+              <div class="breakdown-item">
+                <span class="qty-pill">1 Item</span>
+                <span class="item-text">Royal Dessert</span>
+              </div>
+            </div>
+
+            <div class="perks-tags">
+              <span><i class="fa-solid fa-fire"></i> 3 Snacks</span>
+              <span><i class="fa-solid fa-bowl-food"></i> 2 Curries</span>
+              <span><i class="fa-solid fa-bread-slice"></i> 3 Breads/Rice</span>
+            </div>
+            <button type="button" class="btn-view-menu"><i class="fa-solid fa-sliders"></i> Customize Dishes</button>
+            <div class="box-card-footer">
+              <div class="price-box">
+                <span class="price-label">Pricing</span>
+                <span class="price-val">Quote <small class="price-suffix">on request</small></span>
+              </div>
+              <div class="action-controls">
+                <div class="qty-counter">
+                  <button class="qty-btn dec">-</button>
+                  <span class="qty-val">10</span>
+                  <button class="qty-btn inc">+</button>
+                </div>
+                <button class="btn-add-cart"><i class="fa-solid fa-arrow-right"></i> Choose</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Package 6: Build Your Zoro -->
+        <article class="box-card" data-package-id="pkg-6" data-base-price="249">
+          <div class="box-image-wrap">
+            <img src="images/build your zoro.png" alt="Build Your Zoro" />
+            <span class="badge-accent yellow">Total Freedom</span>
+            <span class="diet-badge veg"><i class="fa-solid fa-leaf"></i> Veg</span>
+          </div>
+          <div class="box-details">
+            <div class="box-header">
+              <h3 class="box-name">Build Your Zoro (Package 6)</h3>
+              <div class="rating"><i class="fa-solid fa-star"></i> 5.0</div>
+            </div>
+
+            <div class="box-breakdown-list">
+              <div class="breakdown-item highlight-custom">
+                <span class="qty-pill green"><i class="fa-solid fa-wand-magic-sparkles"></i> Free Choice</span>
+                <span class="item-text">Custom Menu <small>(Pick Bases, Mains, Sides & Desserts)</small></span>
+              </div>
+            </div>
+
+            <div class="perks-rules">
+              <span><i class="fa-solid fa-wand-magic-sparkles"></i> Unrestricted</span>
+              <span><i class="fa-solid fa-calculator"></i> Live Costing</span>
+            </div>
+            <button type="button" class="btn-view-menu"><i class="fa-solid fa-sliders"></i> Build Custom Box</button>
+            <div class="box-card-footer">
+              <div class="price-box">
+                <span class="price-label">Pricing</span>
+                <span class="price-val">Quote <small class="price-suffix">on request</small></span>
+              </div>
+              <div class="action-controls">
+                <div class="qty-counter">
+                  <button class="qty-btn dec">-</button>
+                  <span class="qty-val">10</span>
+                  <button class="qty-btn inc">+</button>
+                </div>
+                <button class="btn-add-cart"><i class="fa-solid fa-arrow-right"></i> Choose</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Animated Non-Veg Empty State Message -->
+    <div class="nonveg-empty-state" id="nonVegEmptyNotice">
+      <div class="nonveg-notice-card animated-zoro-card">
+        <div class="leaf-icon-circle animated-zoro-icon" style="background: #FFE4E6; color: #D90429;">
+          <i class="fa-solid fa-ban"></i>
+        </div>
+        <span class="nonveg-tag" style="background: #FEE2E2; color: #991B1B; border: 1px solid #FCA5A5;">
+          🚨 STRICT KITCHEN POLICY
+        </span>
+        <h2 class="nonveg-title" style="font-size: 2.2rem; color: #D90429; letter-spacing: -0.5px;">
+          Aise nahi chalta bhai!
+        </h2>
+        <p style="font-size: 1.15rem; font-weight: 800; color: #1E293B; margin-bottom: 0.6rem;">
+          Ek baar boldiya na—<span style="color: #16A34A;">100% Pure Veg means Pure Veg!</span> 🌿✨
+        </p>
+        <p class="nonveg-desc" style="color: #64748B; font-size: 0.95rem; margin-bottom: 2rem;">
+          Zoro's kitchen runs exclusively on pure desi ghee, fresh organic ingredients, and zero non-veg cross contamination. Let's keep the vibe clean and powerful!
+        </p>
+        <button type="button" class="btn-back-to-veg" id="btnSwitchToVeg">
+          <i class="fa-solid fa-arrow-left"></i> Back to Pure Veg Packages
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Dish Selection Modal With Strict Rules Logic -->
+  <div class="menu-modal-backdrop" id="menuModalBackdrop">
+    <div class="menu-modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="modal-badge-row">
+            <span class="modal-pill veg"><i class="fa-solid fa-leaf"></i> Pure Veg</span>
+            <span class="item-count-badge" id="modalRuleBadge">Selection Rules Apply</span>
+          </div>
+          <h2 class="modal-package-name" id="modalPackageTitle">Package Configurator</h2>
+          <span class="modal-package-price" id="modalPackagePrice">Final price by Zoros</span>
+        </div>
+        <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-instruction" id="modalInstructionText">
+          <i class="fa-solid fa-circle-info"></i> Please pick dishes strictly matching the package quota requirements below:
+        </p>
+        <div class="dish-categories-container" id="modalDishCategories"></div>
+      </div>
+
+      <div class="modal-footer">
+        <div class="modal-footer-summary">
+          <span class="sel-count-label">Validation Status:</span>
+          <strong id="modalSelectedCount">Checking rules...</strong>
+        </div>
+        <button type="button" class="btn-finalize-order" id="btnFinalizeOrder" disabled>
+          <span>Lock Menu & Continue</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col brand-info">
+        <a href="index.html" class="brand-logo zoro-crest-brand footer-logo">
+          <div class="logo-crest-wrapper" style="width: 44px; height: 44px;">
+            <picture>
+              <source srcset="images/logo.jpeg" type="image/jpeg">
+              <source srcset="images/logo.jpg" type="image/jpeg">
+              <source srcset="images/logo.png" type="image/png">
+              <img src="images/logo.jpeg" onerror="this.onerror=null; this.src='images/logo.jpg';" alt="FoodZoro Mascot Logo" class="brand-crest-img" />
+            </picture>
+          </div>
+          <div class="brand-title-wrap">
+            <span class="brand-brush-title" style="color: #FFF; font-size: 1.5rem;">
+              <span style="color: #FFF;">FOOD</span><span class="text-brush-red">Z</span><span style="color: #FFF;">ORO</span>
+            </span>
+            <span class="brand-tagline" style="color: #FFB703;">LOVE IT &bull; ZORO IT</span>
+          </div>
+        </a>
+        <p class="footer-text">India's dedicated pure-vegetarian catering platform. Fresh, hygienic meals packed hot to order.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 FOODZORO. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/packages.js"></script>
+</body>
+</html>
